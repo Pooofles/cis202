@@ -49,10 +49,12 @@ int main() {
     };
 
     // Print mountain details
-    std::cout << "Mountain\t\tCountry\t\tElevation (ft)\t\tElevation (m)" << std::endl;
+    std::cout << "\t\tMountain\t\t\t Country\t\t\t\tElevation (ft)\t\t\t\t Elevation (m)" << std::endl;
     for (const Mountain& mountain : mountains) {
-        std::cout << mountain.getName() << "\t\t" << mountain.getCountry() << "\t\t"
-                  << mountain.getElevation() << "\t\t\t" << mountain.toMeters() << std::endl;
+        std::cout << "\t\t" << mountain.getName() << "    \t\t\t " << mountain.getCountry() << "\t\t\t\t   "
+                  << mountain.getElevation() << "\t\t\t\t" << mountain.toMeters() << std::endl;
+        
+        
     }
 
     // Find the shortest mountain
