@@ -90,7 +90,7 @@ int main() {
     std::cout << "\t\tMountain\t\t\t Country\t\t\t\tElevation (ft)\t\t\t\t Elevation (m)" << std::endl;
     for (const Mountain& mountain : mountains) {
         std::cout << "\t\t" << mountain.getName() << " \t\t\t " << mountain.getCountry() << "   \t\t\t\t"
-                  << mountain.getElevation() << "\t\t\t\t         " << mountain.toMeters() << std::endl;
+                  << mountain.getElevation() << " ft\t\t\t\t         " << mountain.toMeters() << " m" << std::endl;
         
         
     }
